@@ -9,16 +9,23 @@
 </head>
 <body>
     <nav>
-        <a href="">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact me</a>
+        <ul class="nav-bar">
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span> 
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>    
     </nav>
     <div >
         <h1 class="header">Welcome to my portfolio</h1>
     </div>
     <div class="name"><h2>Hi! I am Astha <img src="hello.png" class="img"></div></h2></div>
-    <div class="personal_info"> My name is Astha currently pursuing my engineering in CSE(AI&ML) at Ajay Kumar Garg engineering college.I am a passionate learner . I aim to improve my skills contribute to impactful projects that merge creativity with functionality.</div>
+    <div class="personal_info" id="home"> My name is Astha currently pursuing my engineering in CSE(AI&ML) at Ajay Kumar Garg engineering college.I am a passionate learner . I aim to improve my skills contribute to impactful projects that merge creativity with functionality.</div>
     <div class="information">
        <div id="skills" class="item"><img src="code.jpg" class="img"><h3 class="inside">Skills</h3>
             <ul class="inside"> Language known
@@ -37,10 +44,21 @@
        <div id="contact" class="item"><img src="contact.png" class="img"><h3 class="inside">Contact</h3>
        <ul class="inside">
         <li class="inside">Phone:9140521345</li>
-        <li class="inside">E-mail:
-            astha241105@gmail.com</li>
-        <li class="inside">Github Id:Astha24110</li>
+        <li class="inside ">E-mail:<a class="links" href="
+            astha241105@gmail.com">
+            astha241105@gmail.com</a></li>
+        <li class="inside ">Github Id:<a class="links" href="https://github.com/Astha241105">Astha24110</a></li>
        </ul></div>
     </div>
+    <div class="form"><form >
+        <p id="send">You can use form below to send me a meassage</p>
+        <label for="name">Name</label>
+        <input id="name">
+        <label for="mail">Email</label>
+        <input id="mail">
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+        <button>Send</button>
+    </form></div>
 </body>
 </html>
