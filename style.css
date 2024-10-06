@@ -56,6 +56,7 @@ nav ul li a.hover{
 @media(max-width:750px){
     label.logo{
         font-size:50px;
+        position:fixed;
     }
     #checkbtn{
         display:block;
@@ -63,6 +64,9 @@ nav ul li a.hover{
     }
     .fas fa-bars{
         background-color:#1E3E62;
+    }
+    nav{
+        position: fixed;
     }
     nav ul{
         width: 100%;
@@ -74,18 +78,18 @@ nav ul li a.hover{
         transition:2s;
     }
     nav ul li{
+        position:fixed;
         display:block;
         text-align: center; 
         line-height: 40px;
         margin:15px; 
         background-color:#1E3E62;}
     }
-.home{
+div.home{
     width:100%;
     min-height:100vh;
     display:flex;
     align-items: center;
-    margin:0;
     gap:3em;
     padding:30px 12% 0;
     flex-wrap:wrap-reverse;
@@ -107,9 +111,13 @@ nav ul li a.hover{
 .photo img{
     width:300px;
     border:0px;
-    border-radius:50%;}
+    border-radius:50%;
+    box-sizing: border-box;
+    padding:40px;}
 .photo{
     align-items:center;
+    padding-top:100;
+
 }
 .img{
     height:70px;
@@ -191,15 +199,15 @@ p#send{
     text-align: center;
 }
 .form1{
-    width:500px;
-    padding:28px;
+    width:30em;
+    padding:2em;
     margin:0 auto;
     border:0px;
     display: flex;
     flex-direction: column;
     border-radius: 15%;
     align-items: center;
-    box-shadow:0 20px 20px  #FD8B51 ;
+    box-shadow:0 1em 1em  #FD8B51 ;
     justify-content: center;
 }
 div form label,input,button{
