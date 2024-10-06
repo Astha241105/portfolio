@@ -78,7 +78,7 @@ nav ul li a.hover{
         transition:2s;
     }
     nav ul li{
-        position:fixed;
+        position:relative;
         display:block;
         text-align: center; 
         line-height: 40px;
@@ -195,11 +195,14 @@ div.home{
 }
 p#send{
     font-size:40px;
+    box-sizing:border-box;
+    padding:1em;
     color:#1E3E62;
     text-align: center;
 }
 .form1{
-    width:30em;
+    width:20em;
+    height:30em;
     padding:2em;
     margin:0 auto;
     border:0px;
